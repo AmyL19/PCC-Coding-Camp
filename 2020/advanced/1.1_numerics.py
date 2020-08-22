@@ -69,11 +69,3 @@ print(round(math.pi, 3))		# pi
 
 ## Note: see https://docs.python.org/3/library/math.html for more functions
 
-
-
-
-
-
-
-
-
