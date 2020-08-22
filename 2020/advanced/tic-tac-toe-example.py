@@ -45,14 +45,16 @@ f"""For each turn, you will play by selecting the square you want to place in, s
     
   def announceWinner(self, winner):
     print(self.board)
-    if winner == "X": 
+    if winner == TicTacToe.PLAYER[0]: 
       winnerName = self.playerNames[0] 
-    elif winner == "O":
+    elif winner == TicTacToe.PLAYER[1]:
       winnerName = self.playerNames[1]
     else:
       self.tieGame()
       return
     print(f"{winnerName} has won!")
+    if(input("Press 'p' to play again! ") == "p"):
+      self.play()
 
   def makeMove(self):
     inp = input("Select where to make your move: ")
