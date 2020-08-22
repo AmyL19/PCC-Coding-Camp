@@ -4,8 +4,10 @@ class TicTacToe(object):
     def __init__(self):
         self.board = Board()
         self.turn = 0
+
+    def play(self):
         self.playerNames = self.start()
-        self.play()
+        self.run()
 
     @staticmethod
     def start():
@@ -22,7 +24,7 @@ f"""For each turn, you will play by selecting the square you want to place in, s
         input("Have fun!")
         return (playerOneName, playerTwoName)
 
-    def play(self):
+    def run(self):
         winner = False
         while(not winner and self.board.hasEmptySquares()):
             print(self.board)
@@ -66,7 +68,8 @@ f"""For each turn, you will play by selecting the square you want to place in, s
             print("Square taken, try again.", end=" ")
             self.makeMove()
 
-    def tieGame(self): print("Game is tied.")
+    @staticmethod
+    def tieGame(): print("Game is tied.")
 
 class Board(object):
     def __init__(self, board=None): 
@@ -111,4 +114,4 @@ f"""
             -------------
 """)
 
-TicTacToe()
+TicTacToe().play()
