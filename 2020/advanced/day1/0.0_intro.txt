@@ -1,30 +1,18 @@
 =============================== WHAT IS PYTHON ==============================
 
-Python is the world's fasted growing programming language
+- Python is the world's fasted growing programming language
 
-Multi-purpose language
+- Multi-purpose language
 
-Uses include: data analysis, machine learning, apps
+- Uses include: data analysis, machine learning, apps
 
-Very simple syntax
+- Very simple syntax
 
-High-level language
+- High-level language
 
 ================================ HELLO WORLD ================================
 
-create a file
-	first.py
-
-type
-	print("hello world")
-
-in the command line, run
-	python first.py
-
-The output should read:
-	'hello world'
-
-Congrats! You've written your first program!
+Write your first Python program!
 
 
 ============================ PYTHON COMMAND LINE ============================
@@ -32,12 +20,12 @@ Congrats! You've written your first program!
 Type into the command line:
 	python
 
-from there you can write any python, including our hello world example from earlier in the tutorial:
+from there you can write any Python:
 	C:\Users\Your Name>python
 	Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
 	Type "help", "copyright", "credits" or "license" for more information.
 	>>> print("Hello, World!")
 
-Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:
-	exit()
-or hit ctrl-c
+To leave:
+	- exit()
+	- ctrl-c
