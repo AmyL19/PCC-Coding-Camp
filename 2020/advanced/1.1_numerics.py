@@ -1,7 +1,7 @@
 # This file teaches about the int and float types
 # Will also add some stuff about the math library
 
-#==============================  Basic Examples  ==============================
+#==============================  BASIC EXAMPLES  ==============================
 
 print(type(5)) 					# class: int
 print(isinstance(-3, int))		# True
@@ -10,7 +10,7 @@ print(type(0.5)) 				# class: float
 print(type(5.0)) 				# what will this print?
 
 
-#===============================  Conversions  ================================
+#===============================  CONVERSIONS  ================================
 
 x = 5
 y = 4.0
@@ -22,7 +22,7 @@ print(int(z))					# 6 -- Note: just drops the decimal, not rounding
 print(x + y)					# what will this print? hint: implicit conversions
 
 
-#================================  Comparison  ================================
+#================================  COMPARISON  ================================
 
 print(5 == 5) 					# True
 print(5.0 == 5.0) 				# True
@@ -34,7 +34,7 @@ print(-1 > 0)					# False
 ## Note: <, >, <=, >= can all be used similarly
 
 
-#================================  Arithmetic  ================================
+#================================  ARITHMETIC  ================================
 
 print(5 + 3)					# 8
 print(9 - 6)					# 3
@@ -47,7 +47,7 @@ print(100 % 3)					# 1
 print(4 + 3 * 2)				# Note: Remember PEMDAS!!
 
 
-#=========================  Other Built-in Functions  =========================
+#=========================  OTHER BUILT-IN FUNCTIONS  =========================
 
 print(abs(-5))   				# absolute value
 print(max(2, 3))  				# return the max value
@@ -56,7 +56,7 @@ print(pow(2, 3))  				# raise to the given power (pow(x,y) == x**y)
 print(round(2.354, 1)) 			# round with the given number of digits
 
 
-#===========================  Using the Math Library  ==========================
+#===========================  USING THE MATH LIBRARY  ==========================
 
 import math
 
