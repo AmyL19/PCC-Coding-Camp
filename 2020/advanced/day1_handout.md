@@ -24,10 +24,10 @@ Type into the command line: `python`
 
 From there you can write any python, including our hello world example from earlier in the tutorial:
 ```
-	# C:\Users\Your Name>python
-	# Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
-	# Type "help", "copyright", "credits" or "license" for more information.
-	>>> "Hello, World!")
+  # C:\Users\Your Name>python
+  # Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+  # Type "help", "copyright", "credits" or "license" for more information.
+  >>> "Hello, World!")
 ```
 
 Whenever you are done in the python command line, you can simply type `exit()` to quit the python command line interface.
@@ -38,8 +38,8 @@ Whenever you are done in the python command line, you can simply type `exit()` t
 VARIABLES are containers for storing data values. In Python, there is no command for declaring a variable. Variables are created the moment you first assign a value to it.
 
 ```python
-x = 5 							# x is the name of this variable, and 5 is the value that it holds
-y = "hippo"						# assign value "hippo" to variable y
+x = 5               # x is the name of this variable, and 5 is the value that it holds
+y = "hippo"         # assign value "hippo" to variable y
 ```
 
 
@@ -73,8 +73,8 @@ my var = "John"
 What differences do you notice between the variables `x` and `y`? Well, `x` is a variable that holds a number and `y` holds a word. This difference between the kind of values stored in a variable is called TYPES. Variables that store different kinds of values have different types. The type of a variable can be changed after the variable has been set.
 
 ```python
-x = 4 							# x is of type int
-x = "peachy" 					# now x is of type string
+x = 4               # x is of type int
+x = "peachy"        # now x is of type string
 ```
 
 
@@ -97,9 +97,9 @@ print(x)
 The `int` and `float` types are the ways that python can interact with numbers. `int` is short for integer, which refers to whole numbers, positive or negative. `float` refers to numbers that use decimals, like the following:
 
 ```python
-type(5)							# class: int
-isinstance(-3, int)				# True
-type(0.5) 						# class: float
+type(5)               # class: int
+isinstance(-3, int)   # True
+type(0.5)             # class: float
 ```
 
 
@@ -112,10 +112,10 @@ x = 5
 y = 4.0
 z = 6.5
 
-float(x) 						# 5.0
-int(y)							# 4
-int(z)							# 6 -- Note: just drops the decimal, not rounding
-x + y							# what will this print? hint: implicit conversions
+float(x)            # 5.0
+int(y)              # 4
+int(z)              # 6 -- Note: just drops the decimal, not rounding
+x + y               # what will this print? hint: implicit conversions
 ```
 
 ## Comparison
@@ -123,12 +123,12 @@ x + y							# what will this print? hint: implicit conversions
 Python uses the same symbols to compare numbers as in math! The only difference is that when comparing for equality, python uses `==`, since `=` is used for variable assignment. The comparison operators that python understands are `<`, `>`, `<=`, `>=`, and `==`.
 
 ```python
-5 == 5 							# True
-5.0 == 5.0 						# True
-5 == 4							# False
-5 == 5.0						# True
-5 < 6							# True
--1 > 0							# False
+5 == 5              # True
+5.0 == 5.0          # True
+5 == 4              # False
+5 == 5.0            # True
+5 < 6               # True
+-1 > 0              # False
 ```
 
 
@@ -137,15 +137,15 @@ Python uses the same symbols to compare numbers as in math! The only difference 
 Python uses the `+`, `-`, `/`, and `*` operators as you would expect. Two operators that python understands that may be new to you are `//`, which is integer division (same as regular division, but rounds down and produces and `int`), and `%`, which is the modulo operator (the remainder after integer division). In evaluation, python follows the PEMDAS sequences (`%` is on the same level as division). Note that python also uses parentheses, if you need.
 
 ```python
-5 + 3							# 8
-9 - 6							# 3
-3 * 21							# 63
-10 / 3							# 3.33333
-10 // 3							# 3
-9 // 3							# 3
-9 / 3							# 3.0
-100 % 3							# 1
-4 + 3 * 2						# Note: Remember PEMDAS!!
+5 + 3               # 8
+9 - 6               # 3
+3 * 21              # 63
+10 / 3              # 3.33333
+10 // 3             # 3
+9 // 3              # 3
+9 / 3               # 3.0
+100 % 3             # 1
+4 + 3 * 2           # Note: Remember PEMDAS!!
 ```
 
 
@@ -154,11 +154,11 @@ Python uses the `+`, `-`, `/`, and `*` operators as you would expect. Two operat
 Python has a bunch of useful functions for working with numbers -- all of these work with both the `int` and `float` types. Some examples include `abs`, `max`, `min`, `pow`, and `round`. 
 
 ```python
-abs(-5)   						# absolute value
-max(2, 3, 4, 5)  				# return the max value
-min(2, 3)  						# return the min value
-pow(2, 3)  						# raise to the given power (pow(x,y) == x**y)
-round(2.354, 1) 				# round with the given number of digits
+abs(-5)                 # absolute value
+max(2, 3, 4, 5)         # return the max value
+min(2, 3)               # return the min value
+pow(2, 3)               # raise to the given power (pow(x,y) == x**y)
+round(2.354, 1)         # round with the given number of digits
 ```
 
 ## Using the math library
@@ -168,12 +168,12 @@ Python has a lot more functions, stored in libraries that you can invoke as you 
 ```python
 import math
 
-math.sin(0)						# math.cos, math.tan, math.asin, etc.
-math.floor(6.3)					# math.ceil exists also
-math.sqrt(25)					# natural square root
-math.log(math.e)				# default natural log, but can add base: math.log(4, 2) == 2
-round(math.e, 3)				# e
-round(math.pi, 3)				# pi
+math.sin(0)             # math.cos, math.tan, math.asin, etc.
+math.floor(6.3)         # math.ceil exists also
+math.sqrt(25)           # natural square root
+math.log(math.e)        # default natural log, but can add base: math.log(4, 2) == 2
+round(math.e, 3)        # e
+round(math.pi, 3)       # pi
 ```
 
 
@@ -188,16 +188,16 @@ Strings can span multiple lines by using triple quotes:
 
 ```python
 lonngggg_string = """Lorem ipsum dolor sit amet,
-	consectetur adipiscing elit,
-	sed do eiusmod tempor incididunt
-	ut labore et dolore magna aliqua."""
+  consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua."""
 ```
 
 To get the length of a string, you can use the len() function.
 
 ```python
 a = "Hello, World!"
-len(a)							# 13
+len(a)              # 13
 ```
 
 
@@ -209,14 +209,14 @@ For example, here is a merging of two variables, `a` and `b`:
 ```python
 a = "Hello "
 b = "World"
-a + b 							# "Hello World"
+a + b               # "Hello World"
 ```
 
 However, you can only concatenate a string with another string: 
 
 ```python
 age = 36
-txt = "My name is John, I am " + age  # this will fail
+txt = "My name is John, I am " + age    # this will fail
 ```
 
 
@@ -227,11 +227,11 @@ Using the `f` prefix, you can embed expressions inside of strings. These express
 ```python
 name = 'World'
 program = 'Python'
-f'Hello {name}! This is {program}'			# "Hello World! This is Python"
+f'Hello {name}! This is {program}'      # "Hello World! This is Python"
 
 a = 12
 b = 3
-f'12 times 3 is {a * b}.'					# "12 times 3 is 36."
+f'12 times 3 is {a * b}.'         # "12 times 3 is 36."
 ```
 
 
@@ -241,7 +241,7 @@ f'12 times 3 is {a * b}.'					# "12 times 3 is 36."
 
 ```python
 x = input('Enter your name:') 
-f'Hello, {x}'								# "Hello, {whatever the user inputted}"
+f'Hello, {x}'               # "Hello, {whatever the user inputted}"
 ```
 
 
@@ -253,28 +253,28 @@ Python has a set of built-in methods that you can use on strings. Here are a few
 
 ```python
 a = "Hello, World!"
-a.lower()									# "hello, world!"
+a.lower()                 # "hello, world!"
 ```
 
 + The `upper()` method returns the string in upper case:
 
 ```python
 a = "Hello, World!"
-a.upper()									# "HELLO, WORLD!"
+a.upper()                 # "HELLO, WORLD!"
 ```
 
 + The `replace()` method replaces a string with another string:
 
 ```python
 a = "Hello, World!"
-a.replace("H", "J")							# "JELLO, WORLD!"
+a.replace("H", "J")             # "JELLO, WORLD!"
 ```
 
 + The `split()` method splits the string into a list of substrings if it finds instances of the separator:
 
 ```python
 a = "Hello, World!"
-a.split(",")								# ['Hello', ' World!']
+a.split(",")                # ['Hello', ' World!']
 ```
 
 
@@ -286,8 +286,8 @@ a.split(",")								# ['Hello', ' World!']
 There are two types of booleans: `True` and `False`. They exist to represent statements that are true and false.
 
 ```python
-type(True)						       # class: bool
-type(False)						       # class: bool
+type(True)                   # class: bool
+type(False)                  # class: bool
 ```
 
 
@@ -298,15 +298,15 @@ type(False)						       # class: bool
 ```python
 not True                          # False
 
-True and True					            # True
-True and False					          # False
-False and False					          # False
+True and True                     # True
+True and False                    # False
+False and False                   # False
 
-True or True						          # True
-False or True					            # True
-False or False					          # False
+True or True                      # True
+False or True                     # True
+False or False                    # False
 
-True and False or True			      # What would this be?
+True and False or True            # What would this be?
 ```
 
 
@@ -317,13 +317,13 @@ As with everything else, python is able to convert other types into bools. The l
 Additionally, we can see from the last example that python does implicit conversions -- when you put any other type into a function used for booleans, it will automatically convert that type into a boolean. **Note: try not to use logic like this in your code, as it is very non-intuitive to read and understand.**
 
 ```python
-bool(-5)							            # True
-bool(0)							              # False
-bool("")							            # False
-bool("hello")					            # True
-bool(None)						            # False
+bool(-5)                          # True
+bool(0)                           # False
+bool("")                          # False
+bool("hello")                     # True
+bool(None)                        # False
 
-5 or "hello" and None			        # False
+5 or "hello" and None             # False
 ```
 
 
