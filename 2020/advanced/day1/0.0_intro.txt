@@ -1,12 +1,19 @@
 =============================== WHAT IS PYTHON ==============================
 
-Python is a general-purpose, versatile and popular programming language. It’s great as a first language because it is concise and easy to read, and it is also a good language to have in any programmer’s stack as it can be used for everything from web development to software development and scientific applications. Python also works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python is the world's fasted growing programming language
 
+Multi-purpose language
+
+Uses include: data analysis, machine learning, apps
+
+Very simple syntax
+
+High-level language
 
 ================================ HELLO WORLD ================================
 
-create a file 
-	first.py 
+create a file
+	first.py
 
 type
 	print("hello world")
@@ -23,7 +30,7 @@ Congrats! You've written your first program!
 ============================ PYTHON COMMAND LINE ============================
 
 Type into the command line:
-	python 
+	python
 
 from there you can write any python, including our hello world example from earlier in the tutorial:
 	C:\Users\Your Name>python
