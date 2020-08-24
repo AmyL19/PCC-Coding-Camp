@@ -1,6 +1,3 @@
-# This file teaches about the int and float types
-# Will also add some stuff about the math library
-
 #==============================  BASIC EXAMPLES  ==============================
 
 print(type(5)) 					# class: int

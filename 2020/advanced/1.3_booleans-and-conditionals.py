@@ -1,5 +1,3 @@
-# This file touches upon booleans, equality, and conditionals
-
 #============================  TWO TYPES OF BOOLS  ============================
 
 print(type(True))						      # class: bool
