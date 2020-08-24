@@ -41,12 +41,12 @@ def waterState(tempC):
   else:
     print("The water is a liquid.")
 
-waterState(150)
-waterState(30)
-waterState(-1)
-waterState("3")
+waterState(150)                   # The water is boiling!
+waterState(30)                    # The water is a liquid.
+waterState(-1)                    # The water is frozen!
 
-
+# Let's try solving a problem!
+# https://projecteuler.net/problem=1
 
 
 

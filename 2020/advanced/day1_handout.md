@@ -1,49 +1,49 @@
-# ============= PYTHON VARIABLES =============
+# PYTHON VARIABLES
 
-# VARIABLES are containers for storing data values.
-# In Python, there is no command for declaring a variable. Variables are created the moment you
-# first assign a value to it.
+VARIABLES are containers for storing data values. In Python, there is no command for declaring a variable. Variables are created the moment you first assign a value to it.
 
-x = 5 # x is the name of this variable, and 5 is the value that it holds
-y = "hippo"
-print(x)
-print(y)
+```{python}
+x = 5 							# x is the name of this variable, and 5 is the value that it holds
+y = "hippo"						# assign value "hippo" to variable y
+```
 
 
 
-# ============= VARIABLE NAMES =============
+# VARIABLE NAMES
 
-# a few rules for Python variable names:
-# - a variable must start with a letter or underscore (cannot start with a number)
-# - a variable can only contain alpha-numeric characters and underscores
-# - variable names are case-sensitive
+A few rules for Python variable names:
++ a variable must start with a letter or underscore (cannot start with a number)
++ a variable can only contain alpha-numeric characters and underscores
++ variable names are case-sensitive
 
-#Legal variable names:
+## Legal variable names:
+```{python}
 myvar = "John"
 my_var = "John"
 _my_var = "John"
 myVar = "John"
 MYVAR = "John"
 myvar2 = "John"
+```
 
-#Illegal variable names:
+## Illegal variable names:
+```{python}
 2myvar = "John"
 my-var = "John"
 my var = "John"
+```
 
 
+# VARIABLE TYPES
 
-# ============= VARIABLE TYPES =============
+What differences do you notice between the variables `x` and `y`? Well, `x` is a variable that holds a number and `y` holds a word. This difference between the kind of values stored in a variable is called TYPES. Variables that store different kinds of values have different types. The type of a variable can be changed after the variable has been set.
 
-# What differences do you notice between the variables x and y? 
-# Well, x is a variable that holds a number and y holds a word
-# This difference between the kind of values stored in a variable is called TYPES
-# Variables that store different kinds of values have different types.
-# The type of a variable can be changed after the variable has been set.
+```{python}
+x = 4 							# x is of type int
+x = "peachy" 					# now x is of type string
+```
 
-x = 4 # x is of type int
-x = "peachy" # now x is of type string
-
+\pagebreak
 
 
 # ============= DISPLAYING VARIABLES =============
