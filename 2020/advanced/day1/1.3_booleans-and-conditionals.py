@@ -19,8 +19,8 @@ print(type(False))						    # class: bool
 # print(True and False or True)			# What would this be?
 
 # print(True or (5 != 5))
-print(False and 1/0)
-print(True or 1/0)
+# print(False and 1/0)              # short circuiting!
+# print(True or 1/0)                # short circuiting!
 
 
 #========================  IMPLICIT TYPE CONVERSIONS  =========================
