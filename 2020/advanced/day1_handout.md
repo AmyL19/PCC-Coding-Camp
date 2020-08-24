@@ -27,7 +27,7 @@ From there you can write any python, including our hello world example from earl
 	# C:\Users\Your Name>python
 	# Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
 	# Type "help", "copyright", "credits" or "license" for more information.
-	>>> print("Hello, World!")
+	>>> "Hello, World!")
 ```
 
 Whenever you are done in the python command line, you can simply type `exit()` to quit the python command line interface.
@@ -177,7 +177,8 @@ round(math.pi, 3)				# pi
 ```
 
 
-# PYTHON STRINGS
+
+# THE STRING TYPE
 
 ## Intro to Strings
 
@@ -273,9 +274,89 @@ a.replace("H", "J")							# "JELLO, WORLD!"
 
 ```python
 a = "Hello, World!"
-print(a.split(",")) 						# ['Hello', ' World!']
+a.split(",")								# ['Hello', ' World!']
 ```
 
 
 
+# THE BOOL TYPE
 
+## Two types of bools
+
+There are two types of booleans: `True` and `False`. They exist to represent statements that are true and false.
+
+```python
+type(True)						       # class: bool
+type(False)						       # class: bool
+```
+
+
+## Basic boolean operators
+
+`not`, `and`, and `or` are the most basic boolean operators. You can use these to combine booleans and manipulate boolean logic.
+
+```python
+not True                          # False
+
+True and True					            # True
+True and False					          # False
+False and False					          # False
+
+True or True						          # True
+False or True					            # True
+False or False					          # False
+
+True and False or True			      # What would this be?
+```
+
+
+## Implicit type conversions
+
+As with everything else, python is able to convert other types into bools. The logic behind it is, the most basic version of each type gets converted to `false`, while any other version of that type is `true`. For example, for `int`, `bool(0)` is `false`, while any other `int` would be converted to `true`. Similarly, `bool("")` is false, while any other string would be converted to `true`. 
+
+Additionally, we can see from the last example that python does implicit conversions -- when you put any other type into a function used for booleans, it will automatically convert that type into a boolean. **Note: try not to use logic like this in your code, as it is very non-intuitive to read and understand.**
+
+```python
+bool(-5)							            # True
+bool(0)							              # False
+bool("")							            # False
+bool("hello")					            # True
+bool(None)						            # False
+
+5 or "hello" and None			        # False
+```
+
+
+## Conditionals
+
+One useful way that python uses booleans is in conditionals: If a certain condition is met, python will do something; otherwise, python will do something else. You can use the following notation:
+
+```
+if {condition1}:
+  statement1
+elif {conditon2}:
+  statement2
+elif {condition3}: 
+  statement3
+...
+elif {conditonN}:
+  statementN
+else:
+  statementM
+```
+
+where python will evaluate exactly one of the statements based on the first condition to evaluate to `true`. Note that you don't need all of this for valid code; if there are only two options, then `if ... else ...` is sufficient, while if there is only one condition then just an `if ...` may be good enough. Here's an example:
+
+```python
+def waterState(tempC):
+  if tempC >= 100:
+    print("The water is boiling!")
+  elif tempC <= 0:
+    print("The water is frozen!")
+  else:
+    print("The water is a liquid.")
+
+waterState(150)                   # The water is boiling!
+waterState(30)                    # The water is a liquid.
+waterState(-1)                    # The water is frozen!
+```
