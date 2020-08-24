@@ -164,6 +164,7 @@ pow(2, 3)               # raise to the given power (pow(x,y) == x**y)
 round(2.354, 1)         # round with the given number of digits
 ```
 
+
 ## Using the math library
 
 Python has a lot more functions, stored in libraries that you can invoke as you need. One handy example is the `math` library, which holds a lot of mathematical functions that you can take advantage of. Some examples of usign the `math` library are shown below. A full list of the functions that the `math` library holds can be found at: https://docs.python.org/3/library/math.html.
@@ -177,6 +178,18 @@ math.sqrt(25)           # natural square root
 math.log(math.e)        # default natural log, but can add base: math.log(4, 2) == 2
 round(math.e, 3)        # e
 round(math.pi, 3)       # pi
+```
+
+
+## Errors
+
+Infinity and imaginary numbers are among the values that python cannot handle, so when we try to work with those, python will throw errors and give descriptive error messages as to what is wrong. Here are some examples below:
+
+```python
+import math
+
+math.sqrt(-1)              # will not run!
+1/0                        # will not run!
 ```
 
 
@@ -310,6 +323,10 @@ False or True                     # True
 False or False                    # False
 
 True and False or True            # What would this be?
+
+True or (5 != 5)
+False and 1/0                     # short circuiting!
+True or 1/0                       # short circuiting!
 ```
 
 
