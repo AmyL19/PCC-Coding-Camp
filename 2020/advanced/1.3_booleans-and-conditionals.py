@@ -8,6 +8,8 @@ print(type(False))						    # class: bool
 
 #=========================  BASIC BOOLEAN OPERATORS  ==========================
 
+print(not True)                   # False
+
 print(True and True)					    # True
 print(True and False)					    # False
 print(False and False)					  # False
