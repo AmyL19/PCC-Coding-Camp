@@ -25,12 +25,13 @@ def playerMove(board, letter):
     # if the move is valid, then make it
     # if not, then ask the user to input another move
     # return the resulting board
-    pos = int(input("Make a move: "))
+    validMoves = ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+    pos = input("Make a move: ")
     while (True):
-        if (spaceIsFree(pos, board)):
-            return insertBoard(letter, pos, board)
+        if (pos in validMoves and spaceIsFree(int(pos), board)):
+            return insertBoard(letter, int(pos), board)
         else:
-            pos = int(input("That is not a valid move, please choose another space: "))
+            pos = input("That is not a valid move, please choose another space: ")
     return
 
 def isWinner(board, letter):
@@ -74,7 +75,7 @@ def main():
     p1 = input("Player 1, what is your name? ")
     print ("Hello, " + p1 +" !")
     p2 = input("Player 2, what is your name? ")
-    print ("Hello, " + p1 +" !")
+    print ("Hello, " + p2 +" !")
     # create an empty board
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     # while the game is not over:
